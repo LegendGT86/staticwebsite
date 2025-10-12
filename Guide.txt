@@ -1,0 +1,29 @@
+--App.jsx--
+
+import './App.css'
+import MovieCard from './components/MovieCard'
+
+function App() {
+  const movieNumber = 1;
+
+  return (
+    //This is like a conditional statement in JSX, if moviecard is 1 then show Inception else ):( show Deception
+    <>
+    {MovieCard===1 ? (
+    <MovieCard movie={{title: "Inception",release_date: "2010-07-16"}}/>
+    ): (
+    <MovieCard movie={{title: "Deception",release_date: "2010-07-16"
+    }}/>
+  ) 
+}
+  //As an alternative to the above we can use what is called short-circute, but this contains no condition statement
+  //So if movieNumber is 1 then show Inception else nothing will be shown
+  // {movieNumber ===1 && <MovieCard movie={{title: "Inception",release_date: "2010-07-16"}}/>}
+  
+    </>
+
+  );
+}
+
+//Need to export function as a default
+  export default App
