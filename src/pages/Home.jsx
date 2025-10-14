@@ -1,4 +1,5 @@
 import MovieCard from "../components/MovieCard";
+import '../css/Home.css';
 import { useState, useEffect } from "react";
 import { searchMovies, getPopularMovies } from "../services/api";
 
@@ -58,9 +59,9 @@ function Home() {
 
         {error && <div className="error-message">{error}</div>}
 
-        {loading ?(
+        {loading ? (
          <div className="loading">Loading... </div>
-        ):(
+        ) : (
         <div className="movies-grid">
             {movies.map(
                 (movie) =>

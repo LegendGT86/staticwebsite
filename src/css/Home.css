@@ -61,3 +61,25 @@
   width: 100%;
   box-sizing: border-box;
 }
+
+.movie-card {
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 250px;   /* Limit card width */
+  width: 100%;        /* Let it shrink if needed */
+  margin: 0 auto;     /* Center in grid cell */
+}
+
+.movie-poster img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+  align-items: center;
+}
